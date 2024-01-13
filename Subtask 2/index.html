@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    
+    <form class="form">
+        <div class="container">
+            <label for="name" class="fw-bold tag">Name<span class="mandatory">*</span></label>
+            <div class="fname">
+                <input type="text" id="fname" name="fname" required>
+                <label for="fname">First</label>
+            </div>
+            <div class="lname">
+                <input type="text" id="lname" name="lname" required>
+                <label for="lname">Last</label>
+            </div>
+        </div>
+        <div class="container">
+            <label for="email" class="fw-bold tag">Email<span class="mandatory">*</span></label>
+            <input type="email" id="email" name="email" required>
+        </div>
+
+        <div class="container">
+            <label for="rating" class="fw-bold tag">Your Experience<span class="mandatory">*</span></label>
+            <div class="d-flex justify-content-between align-items-center">
+                <div class="ratings">
+                    <i class="fa fa-2x fa-star rating"></i>
+                    <i class="fa fa-2x fa-star rating"></i>
+                    <i class="fa fa-2x fa-star rating"></i>
+                    <i class="fa fa-2x fa-star rating"></i>
+                    <i class="fa fa-2x fa-star rating"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <label for="rating" class="fw-bold tag">How satisfied are you with<span class="mandatory">*</span></label>
+            <table>
+                <tr class="light">
+                  <td></td>
+                  <td>Very Unsatisfied</td>
+                  <td>Unsatisfied</td>
+                  <td>Neutral</td>
+                  <td>Satisfied</td>
+                  <td>Very Satisfied</td>
+                </tr>
+                <tr class="dark">
+                  <td class="ratingType">Purchase</td>
+                  <td><input type="radio" name="purchase" id="purchase"></td>
+                  <td><input type="radio" name="purchase" id="purchase"></td>
+                  <td><input type="radio" name="purchase" id="purchase"></td>
+                  <td><input type="radio" name="purchase" id="purchase"></td>
+                  <td><input type="radio" name="purchase" id="purchase"></td>
+                </tr>
+                <tr class="light">
+                    <td class="ratingType">Service</td>
+                    <td><input type="radio" name="service" id="service"></td>
+                    <td><input type="radio" name="service" id="service"></td>
+                    <td><input type="radio" name="service" id="service"></td>
+                    <td><input type="radio" name="service" id="service"></td>
+                    <td><input type="radio" name="service" id="service"></td>
+                </tr>
+                <tr class="dark">
+                    <td class="ratingType">Company Overall</td>
+                    <td><input type="radio" name="overall" id="overall"></td>
+                    <td><input type="radio" name="overall" id="overall"></td>
+                    <td><input type="radio" name="overall" id="overall"></td>
+                    <td><input type="radio" name="overall" id="overall"></td>
+                    <td><input type="radio" name="overall" id="overall"></td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="container">
+            <label for="rating" class="fw-bold tag">How likely are you to<span class="mandatory">*</span></label>
+            <table>
+                <tr class="light">
+                  <td></td>
+                  <td>Very Unsatisfied</td>
+                  <td>Unsatisfied</td>
+                  <td>Neutral</td>
+                  <td>Satisfied</td>
+                  <td>Very Satisfied</td>
+                </tr>
+                <tr class="dark">
+                  <td class="ratingType">Buy again from us</td>
+                  <td><input type="radio" name="purchase" id="purchase"></td>
+                  <td><input type="radio" name="purchase" id="purchase"></td>
+                  <td><input type="radio" name="purchase" id="purchase"></td>
+                  <td><input type="radio" name="purchase" id="purchase"></td>
+                  <td><input type="radio" name="purchase" id="purchase"></td>
+                </tr>
+                <tr class="light">
+                    <td class="ratingType">Recommend our product to others</td>
+                    <td><input type="radio" name="service" id="service"></td>
+                    <td><input type="radio" name="service" id="service"></td>
+                    <td><input type="radio" name="service" id="service"></td>
+                    <td><input type="radio" name="service" id="service"></td>
+                    <td><input type="radio" name="service" id="service"></td>
+                </tr>
+                <tr class="dark">
+                    <td class="ratingType">Recommend our company to others</td>
+                    <td><input type="radio" name="overall" id="overall"></td>
+                    <td><input type="radio" name="overall" id="overall"></td>
+                    <td><input type="radio" name="overall" id="overall"></td>
+                    <td><input type="radio" name="overall" id="overall"></td>
+                    <td><input type="radio" name="overall" id="overall"></td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="container">
+            <label for="suggestion" class="fw-bold tag">Additional comments or suggestions</label>
+            <textarea id="feedback" name="feedback" cols="151" rows="4" ></textarea>
+        </div>
+        
+        <div class="container">
+            <button class="btn btn-custom">Submit</button>
+        </div>
+    </form>
+
+</body>
+</html>
